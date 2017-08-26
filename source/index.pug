@@ -2,7 +2,7 @@ doctype html
 html
 	head
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		title Kochtopf Boilerplate
+		title NIM-Spiel
 
 		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600")
 		link(rel="stylesheet" href="styles.css")
@@ -17,16 +17,16 @@ html
 					.button(@click="startGame(0)") Einfach
 					.button(@click="startGame(1)") Normal
 			.bot
-				img(src="https://a.pomf.cat/ovbwjs.svg")
+				img(src="media/bot.svg")
 			h1.botText {{botText}}
 			.matches
 				.select
 					.turn(@click="playerTurn(1)") -1
 					.turn(@click="playerTurn(2)") -2
 					.turn(@click="playerTurn(3)") -3
-				img(v-for="n in matchesFiltered()" src="https://a.pomf.cat/msmaar.svg")
+				img(v-for="n in matchesFiltered()" src="media/match.svg")
 				
 			.player
-				img(src="https://a.pomf.cat/lwxpfq.svg")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js")
+				img(src="media/player.svg")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js")
 		script(src="app.js")
