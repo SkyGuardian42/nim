@@ -1,0 +1,29 @@
+{
+  "name": "kochtopf",
+  "version": "1.0.0",
+  "description": "Eine Boilerplate für Webentwicklung mit Pug und Sass, mithilfe von NodeJS und Gulp.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"wer braucht schon tests...\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/malts/kochtopf.git"
+  },
+  "author": "Malte Janßen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/malts/kochtopf/issues"
+  },
+  "homepage": "https://gitlab.com/malts/kochtopf#README",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  }
+}

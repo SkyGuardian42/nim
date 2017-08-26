@@ -1,0 +1,74 @@
+@import 'normalize';
+*
+	box-sizing: border-box
+[v-cloak]
+	display: none
+body
+	margin: none
+	font-family: 'Poppins'
+	font-size: 110%
+.app
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+.matches
+	display: flex
+	justify-content: center
+	img
+		margin: 0px 2px
+
+.select
+	display: flex
+	flex-direction: column
+	margin-right: 14px
+	justify-content: space-between	
+	.turn
+		border: 2px solid #515151
+		//box-shadow: 0 0 12px 0px rgba(0,0,0,.4)
+		padding: 8px
+		font-weight: 700	
+		cursor: pointer
+
+.botText
+	text-align: center
+	margin: .5rem 0
+.bot
+	img
+		height: 26vh
+.player img
+	height: 34vh
+.popups
+	position: absolute
+	height: 100%
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+
+	.card
+		background: white
+		border: 4px solid #515151
+		border-radius: 8px
+		padding: 8vh 12vw
+		box-shadow: 10px 10px 0px 0px rgba(0,0,0,.4)
+		text-align: center
+		h2
+			cursor: pointer
+			text-align: center
+.button
+	padding: .3rem
+	border: .2rem solid #585858
+	border-radius: .3rem
+	padding: 1rem
+	background: #ff5858
+	font-weight: 600
+	color: white
+	cursor: pointer
+	font-size: 1.6rem
+	margin: .2rem
+	white-space: nowrap
+	display: inline-block
+.button:hover
+	background: #fb3d3d

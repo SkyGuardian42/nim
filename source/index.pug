@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Kochtopf Boilerplate
+
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600")
+		link(rel="stylesheet" href="styles.css")
+	body
+		.app
+			.popups(v-cloak v-if="winner !== '' || !gameStarted")
+				.card(v-if="winner !== ''")
+					h1 {{ winner }} Gewinnt
+					h2.button(@click="startGame(0)") Einfach
+					h2.button(@click="startGame(1)") Normal
+				.card(v-if="!gameStarted")
+					.button(@click="startGame(0)") Einfach
+					.button(@click="startGame(1)") Normal
+			.bot
+				img(src="https://a.pomf.cat/ovbwjs.svg")
+			h1.botText {{botText}}
+			.matches
+				.select
+					.turn(@click="playerTurn(1)") -1
+					.turn(@click="playerTurn(2)") -2
+					.turn(@click="playerTurn(3)") -3
+				img(v-for="n in matchesFiltered()" src="https://a.pomf.cat/msmaar.svg")
+				
+			.player
+				img(src="https://a.pomf.cat/lwxpfq.svg")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js")
+		script(src="app.js")
